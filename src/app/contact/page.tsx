@@ -1,40 +1,30 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with SmartStack to discuss your next big digital project. Let's build something world-class.",
+};
 
 export default function ContactPage() {
   return (
     <div className="pt-32 pb-24 bg-slate-50 dark:bg-slate-900 min-h-screen">
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-heading font-bold text-slate-900 dark:text-white mb-6"
-          >
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 dark:text-white mb-6">
             Get in Touch
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-slate-600 dark:text-slate-400"
-          >
+          </h1>
+          <p className="text-lg text-slate-600 dark:text-slate-400">
             Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.
-          </motion.p>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="lg:col-span-1 space-y-8"
-          >
+          <div className="lg:col-span-1 space-y-8">
             <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Contact Information</h3>
               
@@ -80,15 +70,10 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-            className="lg:col-span-2"
-          >
+          <div className="lg:col-span-2">
             <div className="bg-white dark:bg-slate-800 p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
               <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -153,7 +138,7 @@ export default function ContactPage() {
                 </div>
               </form>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

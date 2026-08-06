@@ -12,8 +12,55 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "SmartStack | Building Smart Digital Solutions",
+  metadataBase: new URL('https://smartstack.in'),
+  title: {
+    default: "SmartStack | Building Smart Digital Solutions",
+    template: "%s | SmartStack",
+  },
   description: "We help startups, SMEs, and enterprises build world-class websites, web applications, AI solutions, SaaS platforms, and scalable digital products.",
+  keywords: ["software agency", "web development", "digital solutions", "Next.js", "React", "SaaS development", "UI/UX design", "mobile app development", "AI integration"],
+  authors: [{ name: "SmartStack" }],
+  creator: "SmartStack",
+  publisher: "SmartStack",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smartstack.in",
+    title: "SmartStack | Building Smart Digital Solutions",
+    description: "We help startups, SMEs, and enterprises build world-class websites, web applications, AI solutions, SaaS platforms, and scalable digital products.",
+    siteName: "SmartStack",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "SmartStack - Digital Solutions Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SmartStack | Building Smart Digital Solutions",
+    description: "We help startups, SMEs, and enterprises build world-class websites, web applications, AI solutions, SaaS platforms, and scalable digital products.",
+    images: ["/logo.png"],
+    creator: "@smartstack",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

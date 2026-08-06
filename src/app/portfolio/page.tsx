@@ -1,8 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
-import { GithubLogo } from "@phosphor-icons/react";
+import { ExternalLink, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const allProjects = [
@@ -56,26 +52,24 @@ const allProjects = [
   }
 ];
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "View our selected work and case studies for leading brands, startups, and enterprises.",
+};
+
 export default function PortfolioPage() {
   return (
     <div className="pt-32 pb-24 bg-white dark:bg-slate-900 min-h-screen">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-heading font-bold text-slate-900 dark:text-white mb-6"
-          >
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-slate-900 dark:text-white mb-6">
             Our Work
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-slate-600 dark:text-slate-400"
-          >
+          </h1>
+          <p className="text-lg text-slate-600 dark:text-slate-400">
             A showcase of digital products, platforms, and applications we've built for our partners around the globe.
-          </motion.p>
+          </p>
         </div>
 
         {/* Filter Buttons (Placeholder) */}
@@ -96,12 +90,8 @@ export default function PortfolioPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {allProjects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
               className={`relative rounded-3xl overflow-hidden group min-h-[350px] ${project.image}`}
             >
               <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 md:p-8">
@@ -117,12 +107,12 @@ export default function PortfolioPage() {
                       <ExternalLink className="w-4 h-4 mr-2" /> Live Demo
                     </Button>
                     <Button size="sm" variant="outline" className="text-white border-white/30 hover:bg-white/10 rounded-full px-3">
-                      <GithubLogo className="w-4 h-4" weight="fill" />
+                      <Code className="w-4 h-4" />
                     </Button>
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
         
