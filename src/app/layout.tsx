@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://smartstack.in'),
+  metadataBase: new URL('https://smart-stack-3gik.vercel.app'),
   title: {
     default: "SmartStack | Building Smart Digital Solutions",
     template: "%s | SmartStack",
