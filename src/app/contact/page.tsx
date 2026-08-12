@@ -55,7 +55,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 dark:text-white">Email</h4>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">hello@smartstack.in</p>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">smartstacksoftwaresolution@gmail.com</p>
                   </div>
                 </div>
 
@@ -75,27 +75,33 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white dark:bg-slate-800 p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form action="https://formsubmit.co/smartstacksoftwaresolution@gmail.com" method="POST" encType="multipart/form-data" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                {/* FormSubmit Configuration */}
+                <input type="hidden" name="_subject" value="New Contact Request from SmartStack Website!" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Full Name *</label>
-                  <Input placeholder="John Doe" className="bg-slate-50 dark:bg-slate-900" required />
+                  <Input name="name" placeholder="John Doe" className="bg-slate-50 dark:bg-slate-900" required />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Email Address *</label>
-                  <Input type="email" placeholder="john@company.com" className="bg-slate-50 dark:bg-slate-900" required />
+                  <Input name="email" type="email" placeholder="john@company.com" className="bg-slate-50 dark:bg-slate-900" required />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Phone Number</label>
-                  <Input type="tel" placeholder="+1 (555) 000-0000" className="bg-slate-50 dark:bg-slate-900" />
+                  <Input name="phone" type="tel" placeholder="+1 (555) 000-0000" className="bg-slate-50 dark:bg-slate-900" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Company Name</label>
-                  <Input placeholder="Your Company" className="bg-slate-50 dark:bg-slate-900" />
+                  <Input name="company" placeholder="Your Company" className="bg-slate-50 dark:bg-slate-900" />
                 </div>
                 
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Service Required</label>
-                  <select className="flex h-10 w-full rounded-md border border-slate-200 bg-slate-50 dark:bg-slate-900 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300">
+                  <select name="service" className="flex h-10 w-full rounded-md border border-slate-200 bg-slate-50 dark:bg-slate-900 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300">
                     <option value="">Select a service</option>
                     <option value="web-development">Web Development</option>
                     <option value="custom-app">Custom Web Application</option>
@@ -107,7 +113,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Project Budget</label>
-                  <select className="flex h-10 w-full rounded-md border border-slate-200 bg-slate-50 dark:bg-slate-900 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300">
+                  <select name="budget" className="flex h-10 w-full rounded-md border border-slate-200 bg-slate-50 dark:bg-slate-900 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300">
                     <option value="">Select budget range</option>
                     <option value="under-10k">Under $10,000</option>
                     <option value="10k-25k">$10,000 - $25,000</option>
@@ -119,6 +125,7 @@ export default function ContactPage() {
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Project Description *</label>
                   <textarea 
+                    name="message"
                     className="flex min-h-[120px] w-full rounded-md border border-slate-200 bg-slate-50 dark:bg-slate-900 px-3 py-2 text-sm ring-offset-white placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300"
                     placeholder="Tell us about your project goals and requirements..."
                     required
@@ -127,7 +134,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium text-slate-700 dark:text-slate-300">File Upload (Optional)</label>
-                  <Input type="file" className="bg-slate-50 dark:bg-slate-900 pt-1.5" />
+                  <Input name="attachment" type="file" className="bg-slate-50 dark:bg-slate-900 pt-1.5" />
                   <p className="text-xs text-slate-500 mt-1">Upload RFPs, wireframes, or reference materials (Max 10MB)</p>
                 </div>
 

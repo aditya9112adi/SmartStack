@@ -63,7 +63,7 @@ export function Footer() {
             <address className="not-italic text-lg text-white/80 space-y-2">
               <p>123 Digital Avenue</p>
               <p>Tech District, NY 10001</p>
-              <p className="pt-4">hello@smartstack.in</p>
+              <p className="pt-4">smartstacksoftwaresolution@gmail.com</p>
             </address>
           </div>
         </div>
