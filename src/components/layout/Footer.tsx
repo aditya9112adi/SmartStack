@@ -33,14 +33,14 @@ export function Footer() {
               <div className="relative flex items-center justify-center w-8 h-8 overflow-hidden bg-white">
                 <Image 
                   src="/logo.png" 
-                  alt="SmartStack Logo" 
+                  alt="SmartStack Software Solution Logo" 
                   fill 
                   sizes="32px"
                   className="object-contain p-0.5 filter grayscale" 
                 />
               </div>
               <span className="text-2xl font-bold tracking-tighter uppercase">
-                SmartStack®
+                SmartStack Software Solution
               </span>
             </Link>
             <p className="text-white/50 text-lg max-w-sm">
@@ -69,7 +69,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-xs font-mono tracking-widest uppercase text-white/50">
-          <p>©{currentYear} SMARTSTACK. ALL RIGHTS RESERVED.</p>
+          <p>&copy; {currentYear} SMARTSTACK SOFTWARE SOLUTION. ALL RIGHTS RESERVED.</p>
           <div className="flex gap-8 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

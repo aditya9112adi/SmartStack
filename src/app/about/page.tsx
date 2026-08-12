@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | Aditya Kshirsagar",
-  description: "Learn more about SmartStack, our mission, and our founder Aditya Kshirsagar.",
+  description: "Learn more about SmartStack Software Solution, our mission, and our founder Aditya Kshirsagar.",
 };
 
 export default function Page() {
@@ -14,8 +14,8 @@ export default function Page() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 md:px-6 mb-24">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-slate-900 dark:text-white leading-[0.9] tracking-tighter mb-8 uppercase">
-            We are <br /> SmartStack.
+          <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-bold text-slate-900 dark:text-white leading-[0.9] tracking-tighter mb-8 uppercase">
+            We are <br /> SmartStack Software Solution.
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium max-w-2xl leading-relaxed">
             A premium digital agency dedicated to engineering world-class software, seamless user experiences, and scalable solutions for ambitious brands.
@@ -33,7 +33,7 @@ export default function Page() {
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
                 <Image 
                   src="/founder.jpg" 
-                  alt="Aditya Kshirsagar - Founder of SmartStack" 
+                  alt="Aditya Kshirsagar - Founder of SmartStack Software Solution" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -62,10 +62,10 @@ export default function Page() {
               
               <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">
                 <p>
-                  As the driving force behind SmartStack, Aditya Kshirsagar founded the agency with a singular vision: to bridge the gap between stunning design and robust, scalable engineering.
+                  As the driving force behind SmartStack Software Solution, Aditya Kshirsagar founded the agency with a singular vision: to bridge the gap between stunning design and robust, scalable engineering.
                 </p>
                 <p>
-                  Under his leadership, SmartStack has grown from a boutique development studio into a comprehensive digital powerhouse. Aditya's expertise in full-stack architecture and his uncompromising standards for user experience have helped dozens of startups and enterprises transform their digital presence.
+                  Under his leadership, SmartStack Software Solution has grown from a boutique development studio into a comprehensive digital powerhouse. Aditya's expertise in full-stack architecture and his uncompromising standards for user experience have helped dozens of startups and enterprises transform their digital presence.
                 </p>
                 <p>
                   "We don't just build websites; we engineer digital platforms that serve as the foundation for our clients' business growth. Every line of code and every pixel is crafted with intent."

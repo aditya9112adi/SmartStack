@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with SmartStack to discuss your next big digital project. Let's build something world-class.",
+  description: "Get in touch with SmartStack Software Solution to discuss your next big digital project. Let's build something world-class.",
 };
 
 export default function ContactPage() {

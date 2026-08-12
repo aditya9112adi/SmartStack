@@ -44,14 +44,14 @@ export function Navbar() {
             <div className="relative flex items-center justify-center w-10 h-10 overflow-hidden bg-white">
               <Image 
                 src="/logo.png" 
-                alt="SmartStack Logo" 
+                alt="SmartStack Software Solution Logo" 
                 fill 
                 sizes="40px"
                 className="object-contain p-1 filter grayscale" 
               />
             </div>
             <span className="text-xl font-bold tracking-tighter text-white uppercase ml-2">
-              SmartStack<span className="text-xs align-top">®</span>
+              SmartStack<span className="text-xs align-top hidden md:inline"> Software Solution</span>
             </span>
           </Link>
 
