@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://smart-stack-3gik.vercel.app';
+  const baseUrl = 'https://smartstacksoftwaresolution.vercel.app';
   
   // We can dynamically generate this list in the future based on CMS data
   const routes = [

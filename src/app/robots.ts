@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/private/'],
     },
-    sitemap: 'https://smart-stack-3gik.vercel.app/sitemap.xml',
+    sitemap: 'https://smartstacksoftwaresolution.vercel.app/sitemap.xml',
   };
 }
