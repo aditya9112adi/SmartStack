@@ -23,64 +23,96 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Founder Section */}
+      {/* Leadership Section */}
       <section className="bg-slate-50 dark:bg-slate-800/50 py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="mb-16 md:mb-24">
+            <div className="inline-block px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded-full text-slate-800 dark:text-slate-200 text-xs font-bold tracking-widest uppercase mb-6">
+              Leadership
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 dark:text-white max-w-2xl">
+              Meet the minds behind SmartStack.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             
-            {/* Image Column */}
-            <div className="lg:col-span-5 relative group">
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
+            {/* Aditya Kshirsagar */}
+            <div className="group">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl mb-6">
                 <Image 
                   src="/founder.jpg" 
-                  alt="Aditya Kshirsagar - Founder of SmartStack Software Solution" 
+                  alt="Aditya Kshirsagar - Founder & CEO" 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              {/* Decorative Element */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center p-6 hidden md:flex z-10">
-                <p className="text-white dark:text-slate-900 text-xs font-bold uppercase tracking-widest text-center leading-tight">
-                  Est.<br/>2026
-                </p>
-              </div>
-            </div>
-
-            {/* Content Column */}
-            <div className="lg:col-span-7 lg:pl-12">
-              <div className="inline-block px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded-full text-slate-800 dark:text-slate-200 text-xs font-bold tracking-widest uppercase mb-6">
-                Leadership
-              </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 dark:text-white mb-4">
+              <h3 className="text-2xl lg:text-3xl font-heading font-bold text-slate-900 dark:text-white mb-2">
                 Aditya Kshirsagar
-              </h2>
-              <p className="text-lg text-slate-500 dark:text-slate-400 font-mono mb-8 uppercase tracking-wider">
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400 font-mono mb-4 uppercase tracking-widest">
                 Founder & CEO
               </p>
-              
-              <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">
-                <p>
-                  As the driving force behind SmartStack Software Solution, Aditya Kshirsagar founded the agency with a singular vision: to bridge the gap between stunning design and robust, scalable engineering.
-                </p>
-                <p>
-                  Under his leadership, SmartStack Software Solution has grown from a boutique development studio into a comprehensive digital powerhouse. Aditya's expertise in full-stack architecture and his uncompromising standards for user experience have helped dozens of startups and enterprises transform their digital presence.
-                </p>
-                <p>
-                  "We don't just build websites; we engineer digital platforms that serve as the foundation for our clients' business growth. Every line of code and every pixel is crafted with intent."
-                </p>
-              </div>
-
-              <Link 
-                href="/contact" 
-                className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold uppercase tracking-widest rounded-full hover:bg-slate-800 dark:hover:bg-slate-200 transition-colors group"
-              >
-                Work with us
-                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </Link>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                Aditya bridges the gap between stunning design and robust engineering, driving SmartStack's vision to build scalable, world-class digital platforms.
+              </p>
             </div>
-            
+
+            {/* Shubham Suryawanshi */}
+            <div className="group">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl mb-6">
+                <Image 
+                  src="/shubham.png" 
+                  alt="Shubham Suryawanshi - Co-Founder" 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-heading font-bold text-slate-900 dark:text-white mb-2">
+                Shubham Suryawanshi
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400 font-mono mb-4 uppercase tracking-widest">
+                Co-Founder
+              </p>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                Shubham brings deep technical expertise and operational excellence to the team, ensuring every product meets uncompromising quality standards.
+              </p>
+            </div>
+
+            {/* Second Co-Founder */}
+            <div className="group">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl mb-6">
+                <Image 
+                  src="/cofounder2.png" 
+                  alt="Co-Founder" 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-heading font-bold text-slate-900 dark:text-white mb-2">
+                Ankur
+              </h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400 font-mono mb-4 uppercase tracking-widest">
+                Co-Founder
+              </p>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                Driving innovation and client success, focusing on long-term strategy and building products that generate true business value.
+              </p>
+            </div>
+
+          </div>
+
+          <div className="mt-20 border-t border-slate-200 dark:border-slate-700 pt-16 text-center">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold uppercase tracking-widest rounded-full hover:bg-slate-800 dark:hover:bg-slate-200 transition-colors group"
+            >
+              Work with our team
+              <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </Link>
           </div>
         </div>
       </section>
